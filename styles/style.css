@@ -197,6 +197,7 @@ body {
     .heading h1 {
         font-size: 20vi;
         text-align: center;
+        margin-bottom: 60px;
     }
 
     /* Style for paragraph */
@@ -206,6 +207,11 @@ body {
     }
 
     /***** FEATURES CONTAINER *****/
+
+    .container-features {
+        height: calc(100vh - 40px - 80px);
+        margin-bottom: 80px;
+    }
 
     .options-btn {
         padding: 5px;
