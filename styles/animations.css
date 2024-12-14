@@ -1,0 +1,67 @@
+/* SNOW ANIMATION */
+
+.snow {
+    animation-name: snow;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes snow {
+    from {
+        transform: translateY(-100em);
+    }
+    to {
+        transform: translateY(0vh);
+    }
+} 
+
+/* STAR ANIMATION */
+
+#star-full {
+    animation-name: star;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    transform-origin: 1850px 1100px;
+    translate: -230px -200px;
+}
+
+@keyframes star {
+    0% {
+        rotate: -5deg;
+    }
+    50% {
+        rotate: 5deg;
+    }
+    100% {
+        rotate: -5deg;
+    }
+} 
+
+/* HILLS */
+#ground *{
+    animation-name: ground;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#ground1 {
+    animation-duration: 3300ms;
+}
+
+#ground2 {
+    animation-duration: 5000ms;
+}
+
+@keyframes ground {
+    0% {
+        translate: 0 20px;
+    }
+    50% {
+        translate: 0 -10px;
+    }
+    100% {
+        translate: 0 20px;
+    }
+} 
