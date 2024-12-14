@@ -1,0 +1,218 @@
+/*-******************* BASIC STUFF *******************-*/
+
+body {
+    background: #000; /* Anti-flashbang, thee most important part of code!1!!!1! */
+    overflow: hidden; /* this hiding the overflow of svg image, also it block scrolling*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: var(--regular);
+}
+
+/********** VARIABLES **********/
+
+:root {
+    --radius: 10px; /* universal border radius */
+    --border: 3px solid #FFF; /* universal style for all borders */
+    --medium: "Roboto-Medium, sans-serif";
+    --regular: "Roboto-Regular, sans-serif";
+    --white: #fff;
+}
+
+/********** FONTS **********/
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/*-******************* MAIN *******************-*/
+
+/********** SVG CONTAINER **********/
+
+.container-svg {
+    z-index: 0;
+}
+
+.main-svg {
+    background: url(../images/textures/noise_black.png);
+}
+
+/********** TEXT CONTAINER **********/
+
+.container-text {
+    position: absolute;
+    top: 0;
+    margin: 120px 120px 80px 120px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: calc(100vh - 80px - 120px); /* Calc the real height */
+}
+
+/* Style fo H1 */
+.heading h1 {
+    font-size: 192px;
+    font-family: var(--medium);
+}
+
+/* Style for paragraph */
+.message p {
+    font-size: 40px;
+    max-width: 500px;
+}
+
+/********** FEATURES CONTAINER **********/
+
+/* Style for container with menu and menu btn */
+.container-features {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 40px 40px 40px 40px;
+    z-index: 20;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    height: calc(100vh - 40px * 2); /* Calc the real height */
+    gap: 14px;
+}
+
+.menu {
+    display: flex;
+    gap: 14px;
+}
+
+.options-btn {
+    min-width: 42px;
+    background: none;
+    border: var(--border);
+    border-radius: var(--radius);
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* style for hover, maybe a little bit ugly, remove it in future */
+.options-btn:hover {
+    transform: scale(1.05);
+}
+
+.options-btn:active {
+    transition: 0ms;
+    opacity: 0.6;
+}
+
+.options-btn > * {
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.options-btn > span {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.options-btn > input {
+    transform: scale(2) /* this fixing problems with styling color input on different browsers*/
+}
+
+/********** SNOW DIV **********/
+
+.snow {
+    height: 200em;
+    width: 100vw;
+    background: url(../images/other-assets/snowflakes.svg);
+    background-size: cover;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    pointer-events: none;
+}
+
+/********** MEDIA QUERIES (HELL) **********/
+
+@media screen and (max-width: 1200px) {
+
+    /***** TEXT CONTAINER *****/
+
+    /* Style fo H1 */
+    .heading h1 {
+        font-size: 160px;
+
+    }
+
+    /* Style for paragraph */
+    .message p {
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    /***** TEXT CONTAINER *****/
+
+    /* Style fo H1 */
+    .heading h1 {
+        font-size: 140px;
+
+    }
+
+    /* Style for paragraph */
+    .message p {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    /***** TEXT CONTAINER *****/
+
+    .container-text {
+        margin: 15vh 18vw;
+        height: calc(100vh - 15vh * 2); /* Calc the real height */
+        width: calc(100% - 18vi * 2); /* Calc the real width, needed for center div :3 */
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+    }
+
+    /* Style fo H1 */
+    .heading h1 {
+        font-size: 20vi;
+        text-align: center;
+    }
+
+    /* Style for paragraph */
+    .message p {
+        font-size: 8vi;
+        text-align: center;
+    }
+
+    /***** FEATURES CONTAINER *****/
+
+    .options-btn {
+        padding: 5px;
+    }
+
+    .options-btn > span {
+        display: none;
+    }
+
+}
