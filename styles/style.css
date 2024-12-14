@@ -17,8 +17,8 @@ body {
 :root {
     --radius: 10px; /* universal border radius */
     --border: 3px solid #FFF; /* universal style for all borders */
-    --medium: "Roboto-Medium, sans-serif";
-    --regular: "Roboto-Regular, sans-serif";
+    --medium: Roboto-Medium, sans-serif;
+    --regular: Roboto-Regular, sans-serif;
     --white: #fff;
 }
 
