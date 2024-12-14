@@ -161,7 +161,7 @@ let url
 function urlParams() {
 
     url = window.location.host + "/"
-    return url = "https://" + url + "/PFko/" + "?c=" + userConfig.color.slice(1) + "&s=" + userConfig.snow;
+    return url = "https://k4mmi.github.io/PFko/" + "?c=" + userConfig.color.slice(1) + "&s=" + userConfig.snow;
 }
 
 // This function save into user's clipboard whatever u want
