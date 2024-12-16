@@ -63,12 +63,14 @@ body {
 .heading h1 {
     font-size: 192px;
     font-family: var(--medium);
+    transition: 500ms;
 }
 
 /* Style for paragraph */
 .message p {
     font-size: 40px;
     max-width: 500px;
+    transition: 500ms;
 }
 
 /********** FEATURES CONTAINER **********/
@@ -106,7 +108,7 @@ body {
 
 /* style for hover, maybe a little bit ugly, remove it in future */
 .options-btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
 .options-btn:active {
