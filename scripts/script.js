@@ -160,14 +160,52 @@ let url
 // This function will creat url from user settings (snow... and stuff like that)
 function urlParams() {
 
-    url = window.location.host + "/"
-    return url = "https://k4mmi.github.io/PFko/" + "?c=" + userConfig.color.slice(1) + "&s=" + userConfig.snow;
+    url = urlCleaner(window.location.host)
+    return url = url + "?c=" + userConfig.color.slice(1) + "&s=" + userConfig.snow;
+}
+
+// This function cleans the url from old params, this will make link useful on github hosting and local host
+function urlCleaner(input) {
+
+    // Find the "?"
+    let paramsFind = input.indexOf("?");
+
+    // If was "?" found, delete the params 
+    if (paramsFind !== -1) {
+        return input.slice(0, paramsFind);
+    }
+
+    // Return non-changed url
+    console.log("hello2")
+    return input
+
+    // Delete the params and return
 }
 
 // This function save into user's clipboard whatever u want
-function copy(input){
+function copy(input) {
     navigator.clipboard.writeText(input);
     console.log("Link copied: " + input);
+}
+
+/****************************** YEAR ******************************/
+
+// Get the 
+const date = new Date();
+
+function dateDisplay() {
+
+    // Set year and month
+    let year = date.getFullYear();
+    let month = date.getMonth();
+
+    if (month < 11 ) {
+        // Normal year display
+        document.getElementById("heading-text").innerHTML = "PF" + year;
+    } else {
+        // Add one year before New year
+        document.getElementById("heading-text").innerHTML = "PF" + (++year);
+    }
 }
 
 /****************************** ONLOAD ******************************/
@@ -176,4 +214,5 @@ function copy(input){
 window.onload = function(){
 
     onloadSetting();
+    dateDisplay()
 }
