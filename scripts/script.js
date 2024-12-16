@@ -176,7 +176,7 @@ function urlCleaner(input) {
     }
 
     // Return non-changed url
-    return input
+    return input;
 
     // Delete the params and return
 }
@@ -204,7 +204,7 @@ function dateDisplay() {
         document.getElementById("heading-text").innerHTML = "PF" + year;
         document.getElementById("title").innerHTML = "PF" + year;
     } else {
-        year = ++year
+        year = ++year;
 
         // Add one year before New year
         document.getElementById("heading-text").innerHTML = "PF" + year;
