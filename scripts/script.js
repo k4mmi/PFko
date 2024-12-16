@@ -160,7 +160,7 @@ let url
 // This function will creat url from user settings (snow... and stuff like that)
 function urlParams() {
 
-    url = urlCleaner(window.location.host)
+    url = urlCleaner(document.URL)
     return url = url + "?c=" + userConfig.color.slice(1) + "&s=" + userConfig.snow;
 }
 
@@ -202,10 +202,13 @@ function dateDisplay() {
 
         // Normal year display
         document.getElementById("heading-text").innerHTML = "PF" + year;
+        document.getElementById("title").innerHTML = "PF" + year;
     } else {
-        
+        year = ++year
+
         // Add one year before New year
-        document.getElementById("heading-text").innerHTML = "PF" + (++year);
+        document.getElementById("heading-text").innerHTML = "PF" + year;
+        document.getElementById("title").innerHTML = "PF" + year;
     }
 }
 
