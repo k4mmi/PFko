@@ -176,7 +176,6 @@ function urlCleaner(input) {
     }
 
     // Return non-changed url
-    console.log("hello2")
     return input
 
     // Delete the params and return
@@ -200,9 +199,11 @@ function dateDisplay() {
     let month = date.getMonth();
 
     if (month < 11 ) {
+
         // Normal year display
         document.getElementById("heading-text").innerHTML = "PF" + year;
     } else {
+        
         // Add one year before New year
         document.getElementById("heading-text").innerHTML = "PF" + (++year);
     }
