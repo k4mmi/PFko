@@ -189,7 +189,7 @@ function copy(input) {
 
 /****************************** YEAR ******************************/
 
-// Get the 
+// Get the date
 const date = new Date();
 
 function dateDisplay() {
