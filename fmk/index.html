@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+
+    <!-- SEO stuff -->
+    <title>FMK | Piškvorky</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="utb, fmk, minihra, piškvorky">
+    <meta name="author" content="k4mmi">
+    <meta name="description" content="Zahrajte si unikátní piškvorky k návrhu merche pro FMK!">
+
+    <!-- Open Graph Stuff -->
+    <meta property="og:type" content="game">
+    <meta property="og:site_name" content="FMK MERCH Koncept">
+    <meta property="og:title" content="FMK MERCH | Piškvorky">
+    <meta property="og:description" content="Zahrajte si unikátní piškvorky k návrhu merche pro FMK!">
+    <meta property="og:image" content="https://k4mmi.github.io/fmk-digital-merch/assets/pictures/banner-og-fmk.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://k4mmi.github.io/fmk-digital-merch/fmk/">
+
+    <!-- Twitter Stuff -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FMK MERCH | Piškvorky">
+    <meta name="twitter:description" content="Zahrajte si unikátní piškvorky k návrhu merche pro FMK!">
+    <meta name="twitter:image" content="https://k4mmi.github.io/fmk-digital-merch/assets/pictures/banner-og-fmk.jpg">
+
+    <!-- Links -->
+    <link rel="shortcut icon" href="../assets/favicons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <span style="position: absolute; top: 0; left: 0; font-size: 12px; background-color: black; font-family: monospace; padding: 2px; border: 1px solid black;">under development :3</span>
+
+    <div class="container">
+
+        <div class="container-fmk">
+
+            <!-- Game flower btns -->
+            <button class="game-flower" onclick="play('human', flower.id1)"><img id="flower1" src="../assets/game-assets/flower1.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id2)"><img id="flower2" src="../assets/game-assets/flower2.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id3)"><img id="flower3" src="../assets/game-assets/flower3.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id4)"><img id="flower4" src="../assets/game-assets/flower4.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id5)"><img id="flower5" src="../assets/game-assets/flower5.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id6)"><img id="flower6" src="../assets/game-assets/flower6.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id7)"><img id="flower7" src="../assets/game-assets/flower7.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id8)"><img id="flower8" src="../assets/game-assets/flower8.svg" ondragstart="return false;"></button>
+            <button class="game-flower" onclick="play('human', flower.id9)"><img id="flower9" src="../assets/game-assets/flower9.svg" ondragstart="return false;"></button>
+
+        </div>
+
+    </div>
+
+    <div id="container-menu-fmk" class="container-menu-fmk" style="display: none;">
+
+        <div class="menu">
+
+            <div class="menu-content">
+
+                <div class="menu-text">
+    
+                    <!-- The animation is made in JS -->
+                    <h1 id="menu-text-winner">...</h1>
+    
+                    <a href="#">source code</a>
+    
+                </div>
+    
+                <div class="menu-btn">
+                    <button class="play-btn" onclick="resetGame()"><span>Hrát znovu</span></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../scripts/script.js"></script>
+
+</body>
+</html>
